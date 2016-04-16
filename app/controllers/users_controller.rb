@@ -13,4 +13,9 @@ class UsersController < ApplicationController
 
     redirect_to "/users"
   end
+
+  def show
+    @user = User.find(params[:id])
+    render :show
+  end
 end
