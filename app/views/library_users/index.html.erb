@@ -1,0 +1,8 @@
+<div>
+	<%= @user.first_name %> is a member of the following libraries
+</div>
+<ul>
+	<% @libraries.each do |lib| %>
+		<%= lib.name %>
+	<% end %>
+</ul>

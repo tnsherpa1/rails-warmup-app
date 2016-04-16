@@ -1,6 +1,7 @@
 class LibrariesController < ApplicationController
   def index
     @libraries = Library.all
+    current_user
     render :index
   end
   def new
